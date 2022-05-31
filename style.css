@@ -1,3 +1,5 @@
+/*cp4, CSS 스타일*/
+
 *{
 	font-family: 'Noto Sans KR', sans-serif;
 	list-style: none;
@@ -8,47 +10,47 @@
 	color: #000;
 }
 
-h1
+h1 /*h1 cp4, 40픽셀 텍스트*/
 {
 	font-size: 40px;
 	font-weight: 100;
 }
-.contents1
+.contents1 /*contents 클래스 cp4, 20픽셀 텍스트, 폰트 두께 얇게*/
 {
 	font-size: 20px;
 	font-weight: lighter;
 }
 
-.contents1_bold
+.contents1_bold /*contents1_bold 클래스 cp4, 18픽셀 텍스트, 볼드체*/
 {
 	font-size: 18px;
 	font-weight: bold;
 }
 
-.contents2
+.contents2 /*contents2 클래스 cp4, 18픽셀 텍스트*/
 {
 	font-size: 18px;	
 }
 
-.contents3
+.contents3 /*contents3 클래스 cp4, 14픽셀 텍스트*/
 {
 	font-size: 14px;
 	font-weight: 100%;
 }
 
-.number
+.number /*number 클래스 cp4, 24픽셀 텍스트*/
 {
 	font-size: 24px;
 }
 
-.intro_bg
-{
+.intro_bg /*cp2 홈페이지 상단 백그라운드 이미지 삽입*/
+{ 
 	background-image:url("Top.png");
 	width:100%;
 	height:514px;
 }
 
-.header
+.header /*number 클래스 cp4, 24픽셀 텍스트*/
 {
 	display: flex;
 	width: 1280px;
@@ -102,12 +104,12 @@ h1
 
 .info
 {
-	position: relative; 
+	position: relative; /*cp5, position 배치*/
 	top: -66px;
 	display: flex;
 	width: 1280px;
 	background: #fff;
-	box-shadow: 0px, 10px 0px rgba(0, 0, 0, 0.5); /*cp4, box-shadow*/
+	box-shadow: 0px, 10px 0px rgba(0, 0, 0, 0.5); /*cp4, box-shadow x,y,blur,color*/
 	margin: auto;
 
 }
@@ -207,4 +209,66 @@ h1
 	font-size: 12px;
 	line-height: 30px;
 	margin: 25px auto;
+}
+
+.main_text1
+{
+	width: 100%;
+	height: 650px;
+}
+
+.main_text1 > h1
+{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.main_text1 > .contents1
+{
+	text-align: center;
+}
+
+.dev
+{
+	width: 1280px;
+	display: flex;
+	margin: 49px auto;
+	height: 427px;
+}
+
+.dev > .contents2
+{
+	padding: 20px;
+}
+
+.dev > .contents2 > h2
+{
+	margin-bottom: 27px;
+}
+
+.main_text2
+{
+	width: 100%;
+	height: 418px;
+	background-image: url("contact.png");
+}
+
+footer
+{
+	display: flex;
+	background: #1f1f1f;
+	padding: 30px;
+}
+
+footer > div:first-child
+{ 
+	flex: 3;
+	text-align: center;
+	color: #fff;
+}
+
+footer > div:last-child
+{
+	flex: 9;
+	color: #fff;
 }
