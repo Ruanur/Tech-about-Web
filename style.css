@@ -43,14 +43,14 @@ h1 /*h1 cp4, 40픽셀 텍스트*/
 	font-size: 24px;
 }
 
-.intro_bg /*cp2 홈페이지 상단 백그라운드 이미지 삽입*/
-{ 
+.intro_bg /*intro_bg 클래스 뒷 배경 회색 크기에 맞게, 높이 514 cp4*/
+{
 	background-image:url("Top.png");
 	width:100%;
 	height:514px;
 }
 
-.header /*number 클래스 cp4, 24픽셀 텍스트*/
+.header /*header 클래스  가로 1280, 높이 50 cp5 display*/
 {
 	display: flex;
 	width: 1280px;
@@ -58,7 +58,7 @@ h1 /*h1 cp4, 40픽셀 텍스트*/
 	height: 50px;
 }
 
-.searchArea
+.searchArea /*searchArea 클래스 가로 300, 세로 40, cp4 border*/
 {
 	width: 300px;
 	height: 40px;
@@ -67,7 +67,7 @@ h1 /*h1 cp4, 40픽셀 텍스트*/
 	margin-top: 24px;
 }
 
-.searchArea > form > input
+.searchArea > form > input /*searchArea 클래스의 자식 form의 자식 input에 적용 cp4 CSS 스타일 꾸미기 */
 {
 	border: none;
 	width: 250px;
@@ -77,14 +77,14 @@ h1 /*h1 cp4, 40픽셀 텍스트*/
 	padding-left: 10px;
 }
 
-.searchArea > form > span
+.searchArea > form > span /*흰 글씨 볼드체 cp4 CSS 웹 꾸미기*/
 {
 	width: 50px;
 	color: #fff;
 	font-weight: bold;
 }
 
-.nav
+.nav 
 {
 	display: flex;
 	justify-content: flex-end;
@@ -251,6 +251,11 @@ h1 /*h1 cp4, 40픽셀 텍스트*/
 	width: 100%;
 	height: 418px;
 	background-image: url("contact.png");
+}
+
+.main_text2 > canvas
+{
+	text-align: center;
 }
 
 footer

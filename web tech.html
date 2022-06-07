@@ -5,6 +5,23 @@
 		<link rel="stylesheet" type="text/css" href="style.css"> <!--css파일 불러오기-->
 
 <title>관심있는 기술 및 기업 관련 웹사이트 코딩</title><!--cp2. 타이틀-->
+<script> 
+	//윈도우 오픈으로 윈도우 열기 cp10 window
+	function load(URL)
+	{
+		window.open(URL, "myWin", "left=300, top=300, width=400, height=300");
+	}
+
+
+	//마우스를 윈도우 밖에 클릭하면 페이지가 회색으로 바뀜 cp9
+	window.onblur = function(e) {
+    document.body.style.backgroundColor = "lightgray";
+	}
+
+	window.onfocus = function(e) {
+    document.body.style.backgroundColor = "white";
+	}
+</script>
 </head>
 <body><!--cp3, 시멘틱 태그  -->
 	<div class="wrap">	
@@ -13,10 +30,17 @@
 				<div class="searchArea">
 					<form><!--cp3, 웹 폼 - search 텍스트 입력  -->
 						<input type="search" placeholder="Search">
-						<span>검색</span>
+						<span><a href="javascript:load('.')">검색</a></span>
+						<!--cp10, window 객체 사용해서 html 파일이 들어있는 폴더 정보 확인-->
 					</form>
 				</div>
 				<ul class="nav"><!--cp2, 리스트 and cp3, 시멘틱 태그 - nav: 메뉴 -->
+					<li> <!--cp7, Date 코어 객체 사용 -->
+						<script>
+							var today = new Date(); 
+							document.write("Today : " + today.toLocaleString() + "<br>");
+						</script>
+					</li>
 					<li><a href="#link_header">HOME</a></li>
 					<li><a href="#link_main_text0">ABOUT</a></li>
 					<li><a href="#link_main_text1">DEV</a></li>
@@ -104,7 +128,7 @@
 		<div class="contents1">Front and Back</div>
 		<div class="dev">
 			<div class="front_pic">
-				<img src="front.png" width="640" height="426">
+				<img src="front.png" width="640" height="426"><!-- cp2. 이미지 삽입 -->
 			</div>
 			<div class="contents2">
 				<h2>FrontEnd</h2>
@@ -122,7 +146,7 @@
 
 		<div class="dev">
 			<div class="front_pic">
-				<img src="front-1.png" width="640" height="426">
+				<img src="front-1.png" width="640" height="426"> <!-- cp2. 이미지 삽입 -->
 			</div>
 			<div class="contents2">
 				<h2>FrontEnd Development?</h2>
@@ -136,7 +160,7 @@
 
 		<div class="dev">
 			<div class="front_pic">
-				<img src="back.png" width="640" height="426">
+				<img src="back.png" width="640" height="426"> <!-- cp2. 이미지 삽입 -->
 			</div>
 			<div class="contents2">
 				<h2>BackEnd </h2>
@@ -149,26 +173,26 @@
 
 		<div class="dev">
 			<div class="front_pic">
-				<img src="back-2.png" width="640" height="426">
+				<img src="back-2.png" width="640" height="426"> <!-- cp2. 이미지 삽입 -->
 			</div>
 			<div class="contents2">
 				<h2>BackEnd	Development?</h2>
 
 				백엔드는 소프트웨어 개발 프로세스에서 서버 측 개발 분야이다. 
-				<br>백엔드에서는 데이터를 저장하고 관리하며, 웹사이트의 클라이언트 측(client-side)에서 모든 것이 매끄럽게 작동할 수 있게 해줍니다.
+				<br>백엔드에서는 데이터를 저장하고 관리하며, 웹사이트의 클라이언트 측(client-side)에서 모든 것이 매끄럽게 작동할 수 있게 해준다.
 				<br>
-				<br>백엔드는 사용자들이 직접 보거나 상호작용할 수는 없지만, 소프트웨어 개발의 일부분인 것은 맞습니다. 
-				<br>백엔드에서는 프론트엔드에 있는 사용자들이 취하는 행동들을 처리합니다. 
-				<br>즉, 사용자들은 백엔드에 간접적으로 액세스하는 것이죠. 백엔드 개발에는 사용자 인터페이스가 없는 시스템 컴포넌트 작업, API작성, 라이브러리 생성, 데이터베이스 통합 등 다양한 활동들이 포함되어 있습니다
+				<br>백엔드는 사용자들이 직접 보거나 상호작용할 수는 없지만, 소프트웨어 개발의 일부분인 것은 맞다. 
+				<br>백엔드에서는 프론트엔드에 있는 사용자들이 취하는 행동들을 처리한다. 
+				<br>즉, 사용자들은 백엔드에 간접적으로 액세스하는 것이다. 백엔드 개발에는 사용자 인터페이스가 없는 시스템 컴포넌트 작업, API작성, 라이브러리 생성, 데이터베이스 통합 등 다양한 활동들이 포함되어 있다.
 			</div>
 		</div>
-		<hr>
+		<hr><!-- cp2. 수평선 긋기 -->
 		<div class="main_text1" id="link_main_text2">
 		<h1>LANG</h1>
 		<div class="contents1">HTML? JAVA?</div>
 		<div class="dev">
 			<div class="front_pic">
-				<img src="HTML.png" width="426" height="426">
+				<img src="HTML.png" width="426" height="426"> <!-- cp2. 이미지 삽입 -->
 			</div>
 			<div class="contents2">
 				<h2>FrontEnd Programing LANG</h2>
@@ -200,7 +224,7 @@
 			<div class="contents2">
 				<h2>BackEnd Programing LANG</h2>
 
-				<details>
+				<details> <!-- cp3. 시멘틱 블록 태그(details, summary) -->
 				<summary class="contents1_bold">▶ PHP:</summary>
 				<br>특별히 웹 애플리케이션 개발을 위해서 고안된 서버 측 스크립트 언어이다.
 				<br> PHP는 서버 측에서 실행되기 때문에, 특히 서버 측 언어로서 많은 인기를 얻고 있다.
@@ -238,8 +262,24 @@
 
 		<div class="main_text2">
 			<ul>
-				<li>d</li>
-				<li>a</li>
+				<li> <!-- cp11. 캔버스 생성 및 이미지 그리기 -->
+					<canvas id="myCanvas"
+							style="background-color: ;"
+							width="500" height="418">
+					</canvas>
+					<script>
+					<!-- cp8. document 객체--> 
+						var canvas = document.getElementById("myCanvas");
+						var context = canvas.getContext("2d");
+
+						var img = new Image();
+						img.onload = function() 
+						{
+							context.drawImage(img, 100, 100, 250, 200);
+						}
+						img.src = "KNU.png"
+					</script>
+				</li>
 			</ul>
 		</div>
 		<footer>
